@@ -7,7 +7,7 @@ const Command               = require( "../../Structures/Command" )
         MessageActionRow }  = require( "discord-buttons")
     , { dependencies }      = require( "../../package.json" );
 
-class Botinfos extends Command {
+class Botinfo extends Command {
 
     constructor( client ) {
         super( client, {
@@ -61,8 +61,9 @@ class Botinfos extends Command {
                 ].join( "\n" ) + "```",
             }]
         });
+        await message.channel.send( { embed: embed() } )
     }
 
 }
 
-module.exports = Botinfos;
+module.exports = Botinfo;
