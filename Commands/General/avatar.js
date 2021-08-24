@@ -62,7 +62,7 @@ class Avatar extends Command {
             description: `${this.language.thisIs} ${message.author.id === user.id ? this.language.userIsAuthor( user ) : this.language.userAvatar( user ) }
 [PNG](${png}) | [JPG](${jpg}) | [GIF](${gif}) | [JPEG](${jpeg}) | [WEBP](${webp})`,
             image: {
-                url: user.displayAvatarURL({ dynamic: true, size: 4096 }),
+                url: user.displayAvatarURL({ format: "png", dynamic: true, size: 4096 }),
             },
         } });
 
