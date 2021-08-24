@@ -4,7 +4,8 @@
     "description": "An adorable Discord.js bot. Free, Open Source and Cross Platform.",
     "main": "Kaguya.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js"
     },
     "repository": {
         "type": "git",
